@@ -1,0 +1,20 @@
+<!--
+  ~ ©2015 Joel Brisbin. All Rights Reserved.
+  -->
+
+<resources>
+    <string name="title_activity_splash">Joel\'s Crappy Craps\!</string>
+    <string name="app_name">Joel\'s Crappy Craps\!</string>
+    <string name="game_title">Joel\'s\nCrappy\nCraps\!</string>
+    <string name="wins">Wins: </string>
+    <string name="losses">Losses: </string>
+    <string name="restart_button">Restart Game</string>
+    <string name="roll_button">Roll the Dice!</string>
+    <string name="game_copyright">©2015 Joel Brisbin. All Rights Reserved.</string>
+    <string name="dice1_description">First of two dice.</string>
+    <string name="dice2_description">Second of two dice.</string>
+
+    <string name="title_activity_game">GameActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

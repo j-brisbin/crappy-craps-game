@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/mainLayout"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/material_deep_teal_200">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dice1"
+                android:src="@drawable/dice0"
+                android:contentDescription="@string/dice1_description"
+                android:layout_marginRight="50dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dice2"
+                android:src="@drawable/dice0"
+                android:contentDescription="@string/dice2_description" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Roll Number: "
+            android:id="@+id/rollNumber"
+            android:layout_marginTop="38dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Wins: 0 Losses: 0"
+            android:id="@+id/winsLosses"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_button"
+            android:id="@+id/rollButton"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/material_deep_teal_500"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_button"
+            android:id="@+id/restartButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/material_blue_grey_950"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/gameStatus"
+            android:layout_above="@+id/restartButton"
+            android:layout_alignLeft="@+id/winsLosses"
+            android:layout_alignStart="@+id/winsLosses"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>
